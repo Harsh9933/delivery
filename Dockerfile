@@ -6,7 +6,7 @@ COPY . .
 
 RUN ./mvnw package --no-daemon
 
-FROM adoptopenjdk:21-jdk-hotspot
+FROM openjdk:17-jdk-slim
 
 EXPOSE 8080
 
